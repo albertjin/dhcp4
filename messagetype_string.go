@@ -4,14 +4,13 @@ package dhcp4
 
 import "fmt"
 
-const _MessageType_name = "DiscoverOfferRequestDeclineACKNAKReleaseInform"
+const _MessageType_name = "MessageTypeNilDiscoverOfferRequestDeclineACKNAKReleaseInform"
 
-var _MessageType_index = [...]uint8{0, 8, 13, 20, 27, 30, 33, 40, 46}
+var _MessageType_index = [...]uint8{0, 14, 22, 27, 34, 41, 44, 47, 54, 60}
 
 func (i MessageType) String() string {
-	i -= 1
 	if i+1 >= MessageType(len(_MessageType_index)) {
-		return fmt.Sprintf("MessageType(%d)", i+1)
+		return fmt.Sprintf("MessageType(%d)", i)
 	}
 	return _MessageType_name[_MessageType_index[i]:_MessageType_index[i+1]]
 }

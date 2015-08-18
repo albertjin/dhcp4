@@ -206,6 +206,7 @@ const (
 
 // DHCP Message Type 53
 const (
+	MessageTypeNil MessageType = 0 // No message type found
 	Discover MessageType = 1 // Broadcast Packet From Client - Can I have an IP?
 	Offer    MessageType = 2 // Broadcast From Server - Here's an IP
 	Request  MessageType = 3 // Broadcast From Client - I'll take that IP (Also start for renewals)
